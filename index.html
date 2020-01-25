@@ -8,133 +8,142 @@
     <title>First PWA</title>
 
     <!-- css style dibawah sini -->
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/material.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 </head>
 <body>
-    <header class="header">
-        <h1 class="header__title">Weather PWA</h1>
-        <button id="butRefresh" class="headerButton" aria-label="Refresh"></button>
-        <button id="butAdd" class="headerButton" aria-label="Add"></button>
-    </header>    
-
-    <main class="main">
-        <div class="card cardTemplate weather-forest" hidden>
-            <div class="location"></div>
-            <div class="date"></div>
-            <div class="description"></div>
-            <div class="current">
-                <div class="visual">
-                    <div class="icon"></div>
-                    <div class="temperature">
-                        <span class="value"></span><span class="scale">F</span>
-                    </div>
-                </div>
-                <div class="description">
-                    <div class="feels-like">
-                        <span class="value"></span><span class="scale">F</span>
-                    </div>
-                    <div class="precip"></div>
-                    <div class="humidity"></div>
-                    <div class="wind">
-                        <span class="value"></span>
-                        <span class="scale">mph</span>
-                        <span class="direction"></span>
-                    </div>
-                </div>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <h1 class="mdl-layout-title">Weather PWA</h1>
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation -->
+                <nav class="mdl-navigation">
+                    <button id="butRefresh" class="headerButton mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" aria-label="Refresh"></button>
+                    <button id="butAdd" class="headerButton mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" aria-label="Add"></button>
+                </nav>
             </div>
-            <div class="future">
-                <div class="oneday">
-                    <div class="icon"></div>
-                    <div class="temp-high">
-                        <span class="value"></span>
+        </header>    
+    </div>
+
+    <main class="main mdl-layout__content">
+        <div class="page-content">
+            <div class="card mdl-card cardTemplate weather-forest" hidden>
+                <div class="location"></div>
+                <div class="date"></div>
+                <div class="description"></div>
+                <div class="current">
+                    <div class="visual">
+                        <div class="icon"></div>
+                        <div class="temperature">
+                            <span class="value"></span><span class="scale">F</span>
+                        </div>
                     </div>
-                    <div class="temp-low">
-                        <span class="value"></span>
-                    </div>
-                </div>
-                <div class="oneday">
-                    <div class="icon"></div>
-                    <div class="temp-high">
-                        <span class="value"></span>
-                    </div>
-                    <div class="temp-low">
-                        <span class="value"></span>
-                    </div>
-                </div>
-                <div class="oneday">
-                    <div class="icon"></div>
-                    <div class="temp-high">
-                        <span class="value"></span>
-                    </div>
-                    <div class="temp-low">
-                        <span class="value"></span>
-                    </div>
-                </div>
-                <div class="oneday">
-                    <div class="icon"></div>
-                    <div class="temp-high">
-                        <span class="value"></span>
-                    </div>
-                    <div class="temp-low">
-                        <span class="value"></span>
+                    <div class="description">
+                        <div class="feels-like">
+                            <span class="value"></span><span class="scale">F</span>
+                        </div>
+                        <div class="precip"></div>
+                        <div class="humidity"></div>
+                        <div class="wind">
+                            <span class="value"></span>
+                            <span class="scale">mph</span>
+                            <span class="direction"></span>
+                        </div>
                     </div>
                 </div>
-                <div class="oneday">
-                    <div class="icon"></div>
-                    <div class="temp-high">
-                        <span class="value"></span>
+                <div class="future">
+                    <div class="oneday">
+                        <div class="icon"></div>
+                        <div class="temp-high">
+                            <span class="value"></span>
+                        </div>
+                        <div class="temp-low">
+                            <span class="value"></span>
+                        </div>
                     </div>
-                    <div class="temp-low">
-                        <span class="value"></span>
+                    <div class="oneday">
+                        <div class="icon"></div>
+                        <div class="temp-high">
+                            <span class="value"></span>
+                        </div>
+                        <div class="temp-low">
+                            <span class="value"></span>
+                        </div>
                     </div>
-                </div>
-                <div class="oneday">
-                    <div class="icon"></div>
-                    <div class="temp-high">
-                        <span class="value"></span>
+                    <div class="oneday">
+                        <div class="icon"></div>
+                        <div class="temp-high">
+                            <span class="value"></span>
+                        </div>
+                        <div class="temp-low">
+                            <span class="value"></span>
+                        </div>
                     </div>
-                    <div class="temp-low">
-                        <span class="value"></span>
+                    <div class="oneday">
+                        <div class="icon"></div>
+                        <div class="temp-high">
+                            <span class="value"></span>
+                        </div>
+                        <div class="temp-low">
+                            <span class="value"></span>
+                        </div>
                     </div>
-                </div>
-                <div class="oneday">
-                    <div class="icon"></div>
-                    <div class="temp-high">
-                        <span class="value"></span>
+                    <div class="oneday">
+                        <div class="icon"></div>
+                        <div class="temp-high">
+                            <span class="value"></span>
+                        </div>
+                        <div class="temp-low">
+                            <span class="value"></span>
+                        </div>
                     </div>
-                    <div class="temp-low">
-                        <span class="value"></span>
+                    <div class="oneday">
+                        <div class="icon"></div>
+                        <div class="temp-high">
+                            <span class="value"></span>
+                        </div>
+                        <div class="temp-low">
+                            <span class="value"></span>
+                        </div>
+                    </div>
+                    <div class="oneday">
+                        <div class="icon"></div>
+                        <div class="temp-high">
+                            <span class="value"></span>
+                        </div>
+                        <div class="temp-low">
+                            <span class="value"></span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <div class="dialog-container">
-        <div class="dialog">
-            <div class="dialog-title">Add new city</div>
-            <div class="dialog-body">
+    <div class="dialog-container mdl-dialog">
+        <div class="dialog mdl-dialog">
+            <div class="dialog-title mdl-dialog__title">Add new city</div>
+            <div class="dialog-body mdl-layout__content">
                 <select id="selectCityToAdd">
                     <option value="jakarta">Jakarta</option>
                     <option value="depok">Depok</option>
                     <option value="bogor">Bogor</option>
                 </select>
             </div>
-            <div class="dialog-buttons">
-                <button id="butAddCity" class="button">Add</button>
-                <button id="butAddCancel" class="button">Cancel</button>
+            <div class="dialog-buttons mdl-dialog__actions">
+                <button id="butAddCity" class="button mdl-button mdl-js-button mdl-button--primary">Add</button>
+                <button id="butAddCancel" class="button mdl-button mdl-js-button mdl-button--accent">Cancel</button>
             </div>
         </div>
     </div>
     
-    <div class="loader">
-        <svg viewBox="0 0 32 32" width="32" height="32">
-            <circle id="Spinner" cx="16" cy="16" r="14" fill="none"></circle>
-        </svg>
+    <div class="loader mdl-spinner mdl-js-spinner is-active"></div>
     </div>
 
     <!-- app.js berada dibawah sini -->
     <script src="scripts/app.js"></script>
+    <script src="scripts/material.min.js"></script>
 </body>
 </html>
